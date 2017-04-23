@@ -6,3 +6,4 @@ RUN cd /tmp; php -r "copy('https://getcomposer.org/installer', 'composer-setup.p
 RUN apt-get -y install curl
 RUN curl -sS https://platform.sh/cli/installer | php
 ADD config.yaml /root/.platformsh/config.yaml
+ADD apitoken /root/.platformsh/apitoken
